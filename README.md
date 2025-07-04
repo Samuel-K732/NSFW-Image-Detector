@@ -8,7 +8,7 @@ NSFW параметры: nudity, gore, drugs.
 - Sightengine api_user и api_secret. Для получения ключей нужно создать аккаунт по адресу: https://sightengine.com/ (Данные банковской карты не требуются!). 
 
 ## Запуск:
-- Клонировать репозиторий ``git clone https://github.com/username/repo.git``
+- Клонировать репозиторий ``git clone https://github.com/Samuel-K732/NSFW-Image-Detector``
 - Установить зависимости ``pip install -r requirements.txt``
 - Cоздать .env файл со следующим содержимым:  
 ``SIGHTENGINE_API_USER=ваш_user_id ``   
