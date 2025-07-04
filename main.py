@@ -67,7 +67,7 @@ def nsfw_check(data: dict) -> bool:
 
     scores = [nudity_score, drug_score, gore_score]
 
-    return any(score >= 0.7 for score in scores)
+    return any(score > 0.7 for score in scores)
 
 
 if __name__ == "__main__":
