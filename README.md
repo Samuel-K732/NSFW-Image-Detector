@@ -13,7 +13,7 @@ NSFW параметры: nudity, gore, drugs.
 - Cоздать .env файл со следующим содержимым:  
 ``SIGHTENGINE_API_USER=ваш_user_id ``   
 ``SIGHTENGINE_API_SECRET=ваш_secret_key``
-- Запуск сервера:  ``uvicorn main:app``  или ``python main.py``
+- Запуск сервера:  ``uvicorn main:app``  или ``python main.py``  
  http://localhost:5000/docs - Swagger документация.
 
 
