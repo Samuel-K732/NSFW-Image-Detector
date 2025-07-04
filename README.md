@@ -18,9 +18,9 @@ NSFW параметры: nudity, gore, drugs.
 
 
 ### Пример запроса через cURL:
-curl -X POST -F "file=@example.jpg" http://localhost:8000/moderate   
+curl -X POST -F "file=@example.jpg" http://localhost:5000/moderate   
 ИЛИ (для Windows 10, 11)  
-curl.exe -X POST -F "file=@example.jpg" http://localhost:8000/moderate
+curl.exe -X POST -F "file=@example.jpg" http://localhost:5000/moderate
 
 Возможные ответы:
 { "status": "OK" } — изображение безопасно;  
