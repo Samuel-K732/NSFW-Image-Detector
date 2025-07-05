@@ -34,15 +34,13 @@ def moderate_image(file: UploadFile = File(...)):
         data=params,
     )
 
-    print("Status Code:", response.status_code)
-    print("Response Text:", response.text)
-
     if response.status_code != 200:
         raise HTTPException(
             status_code=500,
             detail=f"Ошибка при запросе к API: {response.status_code} {response.text}",
         )
 
+    print(response.text)
     data = response.json()
 
     if nsfw_check(data):
