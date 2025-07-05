@@ -15,8 +15,8 @@ SIGHTENGINE_ENDPOINT = "https://api.sightengine.com/1.0/check.json"
 ALLOWED_TYPES = {"image/jpeg", "image/png"}
 
 
-@app.post("/moderate")
-async def moderate_image(file: UploadFile = File(...)):
+@app.post("/moderate", summary="Проверка изображения")
+def moderate_image(file: UploadFile = File(...)):
     if file.content_type not in ALLOWED_TYPES:
         raise HTTPException(
             status_code=400, detail="Данный формат файла не поддерживается"
